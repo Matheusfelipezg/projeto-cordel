@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('fontes/PassionOne-Bold.ttf') format('truetype');
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Sriracha', cursiva;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+header > h1{
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3vw;
+}
+
+section > p{
+    margin-bottom: 1em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.604);
+    padding: 7px;
+    display: inline-block;
+}
+
+section#img01{
+    background-image: url(imagens/pexels-brazil-topno-5246939.jpg);
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.53);
+    background-attachment: fixed;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.522);
+}
+
+section#img02{
+    background-image: url(imagens/pexels-cottonbro-studio-7128770.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+}
